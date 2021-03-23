@@ -12,7 +12,12 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://github.com/koichirokudo" target="_blank" rel="noopener">
+      <Link
+        color="inherit"
+        href="https://github.com/koichirokudo"
+        target="_blank"
+        rel="noopener"
+      >
         koichiro kudo
       </Link>
     </Typography>
@@ -39,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn({ setName }) {
   const classes = useStyles();
 
   return (
